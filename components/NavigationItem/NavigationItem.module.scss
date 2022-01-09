@@ -1,0 +1,41 @@
+
+
+.navItem {
+    width: 100%;
+    
+    a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 12px 40px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #5C666B;
+        transition: 100ms ease-in-out all;
+        
+        &:hover {
+            color: #000;
+            transition: 100ms ease-in-out all;
+        }
+
+        span {
+            margin-left: 12px;
+            line-height: 20px;
+        }
+    }
+
+    &.active {
+        a {
+            color: #000;
+        }
+    }
+
+    .iconContainer {
+        display: flex;
+        background-color: #e5e6e7;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+}

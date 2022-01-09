@@ -1,0 +1,32 @@
+html,
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+		Droid Sans Helvetica Neue, sans-serif;
+	height: 100%;
+    line-height: 1.6;
+    background: linear-gradient(to right, #fafafa 50%, #fff 50%);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: minmax(320px, 1fr) 1fr 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+.content-container {
+	grid-column: span 2;
+	background-color: #fff;
+}
+
+.content-block {
+	padding: 20px 40px;
+}

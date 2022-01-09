@@ -1,0 +1,16 @@
+.pageHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+
+    .title {
+        display: block;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .subtitle {
+        opacity: 0.8;
+    }
+}
