@@ -1,41 +1,51 @@
-
-
 .navItem {
-    width: 100%;
-    
-    a {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 12px 40px;
-        text-decoration: none;
-        font-weight: 600;
-        color: #5C666B;
-        transition: 100ms ease-in-out all;
-        
-        &:hover {
-            color: #000;
-            transition: 100ms ease-in-out all;
-        }
+	width: 100%;
 
-        span {
-            margin-left: 12px;
-            line-height: 20px;
-        }
-    }
+	a {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 12px 40px;
+		text-decoration: none;
+		font-weight: 600;
+		color: #5c666b;
+		transition: 100ms ease-in-out all;
 
-    &.active {
-        a {
-            color: #000;
-        }
-    }
+		&:hover {
+			color: #000;
+			transition: 100ms ease-in-out all;
+		}
 
-    .iconContainer {
-        display: flex;
-        background-color: #e5e6e7;
-        padding: 8px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 4px;
-    }
+		span {
+			margin-left: 12px;
+			line-height: 20px;
+		}
+	}
+
+	&.active {
+		a {
+			color: #000;
+			transition: 100ms ease-in-out all;
+		}
+
+		.iconContainer {
+			color: #fff;
+			background-color: var(--color-primary);
+			transition: 160ms ease-in-out all;
+		}
+	}
+
+	.iconContainer {
+		display: flex;
+		background-color: #e5e6e7;
+		height: 32px;
+		width: 32px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+
+		i {
+			line-height: 1;
+		}
+	}
 }

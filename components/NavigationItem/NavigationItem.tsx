@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './NavigationItem.module.scss';
 import Link from 'next/link';
+import { useRouter } from "next/router";
 
 interface INavigationItem {
 	linkTitle: string;
@@ -8,15 +9,16 @@ interface INavigationItem {
 	color?: string;
     iconColor?: string;
 	icon?: string;
-	iconSize?: number;
 	hasChildren?: boolean;
 	children?: {};
 }
 
 export const NavigationItem = (props: INavigationItem) => {
 
+    const router = useRouter();
+
 	return (
-		<div className={styles.navItem}>
+		<div className={`${styles.navItem} ${router.pathname === `${props.linkTo}` ? styles.active : ""}`} >
 			{props.icon ? (
                     <Link href={`${props.linkTo}`}>
                         <a>

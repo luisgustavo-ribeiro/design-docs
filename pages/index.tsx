@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 const Home: NextPage = () => {
   return (
     <div>
-        alo
+        
     </div>
   )
 }
